@@ -1,0 +1,7 @@
+{
+    "name":"Discord burst bot",
+    "main":"bot.js",
+    "dependencies":{
+        "discord.js":"latest"
+    }
+}
