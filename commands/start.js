@@ -2,6 +2,10 @@ module.exports = {
     name: 'start',
     description: 'How do I get started',
     execute(message, args) {
+
+        message.delete()
+        .then(msg => console.log(`Deleted message from ${msg.author}`))
+        .catch(console.error);
         message.reply(`Here is the proper logic:
 Goto faucet and get a coin: https://faucet.burstpay.net/
 1) Set reward recipient: https://wallet.burst.cryptoguru.org:8125/rewardassignment.html
