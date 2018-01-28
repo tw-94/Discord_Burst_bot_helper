@@ -11,7 +11,7 @@ client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands');
 
 //set playing
-var playing = `Say -faq`;
+var playing = `Say -commands`;
 
 //date and time setup
 var date = new Date();
