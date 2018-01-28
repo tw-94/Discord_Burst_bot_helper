@@ -3,6 +3,9 @@ module.exports = {
     description: 'Help Me!',
     execute(message, args) {
        console.log("Help");
+       message.delete()
+        .then(msg => console.log(`Deleted message from ${msg.author}`))
+        .catch(console.error);
         message.channel.send({embed: {
             color: 3447003,
             title: 'Help',
