@@ -9,7 +9,7 @@ module.exports = {
 Server: burstneon.com
 Port: 8080
 ?Minimum? Deadline: 63072000 (This is 2 years)
-If using qbundle wallet, go to: _Tools -> _Set Pool
+If using qbundle wallet, go to: __T__ools -> Miner
 If using the command line 'miner-burst': edit miner.conf
 Need more? See:  https://www.sansun.no/burstneon.php`);
     },
