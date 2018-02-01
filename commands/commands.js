@@ -26,6 +26,10 @@ module.exports = {
                 {
                     name:'-download',
                     value: 'To download qbundle or burst core'
+                },
+                {
+                    name:'-burstneon',
+                    value:'To get info to connect to burstneon.com'
                 }
             ],
             timestamp: new Date(),
