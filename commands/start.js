@@ -8,7 +8,7 @@ module.exports = {
         .catch(console.error);
         message.reply(`Here is the proper logic:
 Goto faucet and get a coin: https://faucet.burstpay.net/
-1) Set reward recipient: https://wallet.burst.cryptoguru.org:8125/rewardassignment.html
+1) Set reward recipient: https://burstneon.com/rewardassignment.html
     For burstneon.com, recipient is: BURST-YXZW-JH7M-QKR9-9PKBN
 2) Mine and earn some coins.
 3) Set your name when you finally have some coins.
