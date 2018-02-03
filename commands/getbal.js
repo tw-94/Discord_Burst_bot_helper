@@ -8,11 +8,19 @@ module.exports = {
         .then(msg => console.log(`Deleted message from ${msg.author}`))
         .catch(console.error);
         console.log(args);
-        const sys = require('sys')
+        const os = require('os');
+        var system = os.platform();
+        console.log(system);
+        if(system = "linux"){
+            const sys = require('sys')
         const exec = require('child_process').execSync;
         var get = `curl -s 'http://burstneon.com/blocks2.csv' | grep ${args[0]}`;
         var data = exec(get).toString();
         message.reply(data);
         console.log(data);
+        }else{
+            console.log(`OS must be linux to use this command!`);
+            message.reply(`Please contact the bot maker/owner to tell them their was an issue!`);
+        };
     }
 };
