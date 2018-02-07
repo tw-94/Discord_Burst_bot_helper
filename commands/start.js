@@ -23,7 +23,7 @@ Goto faucet and get a coin: https://faucet.burstpay.net/
 2) Mine and earn some coins.
 3) Set your name when you finally have some coins.
 In other words, you can mine without setting your name. Don't waste your first coin on that.
-Let setting the reward assignment be yout first transaction.)
+Let setting the reward assignment be yout first transaction.`);
            }
     },
 };
