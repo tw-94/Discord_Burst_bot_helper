@@ -16,7 +16,7 @@ In other words, you can mine without setting your name. Don't waste your first c
 Let setting the reward assignment be yout first transaction.`);
            } else{
                 let TagedMember = message.guild.member(message.mentions.users.first());
-               message.channel.send(`@${TagedMember} Here is the proper logic:
+               message.channel.send(`${TagedMember} Here is the proper logic:
 Goto faucet and get a coin: https://faucet.burstpay.net/
 1) Set reward recipient: https://burstneon.com/rewardassignment.html
     For burstneon.com, recipient is: BURST-YXZW-JH7M-QKR9-9PKBN
