@@ -8,12 +8,12 @@ module.exports = {
         .catch(console.error);
         console.log(args);
         var getJSON = require('get-json')
-        getJSON('https://api.coinmarketcap.com/v1/ticker/burst/', function(error, response){
+        getJSON('http://coincap.io/page/BURST', function(error, response){
 
         error
-        // undefined
 
-        message.reply(`Usd price:${response}`);
+        
+        message.reply(`One $BURST = ${response.price_usd} USD or ${response.price_btc} BTC`);
 
 })
     }
