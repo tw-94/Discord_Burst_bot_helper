@@ -13,8 +13,7 @@ module.exports = {
         error
         // undefined
 
-        message.reply(`Usd price:${response.result.price_usd}
-        BTC Price:${response.result.price_btc}`);
+        message.reply(`Usd price:${response.result}`);
 
     response.ok
     // => true
