@@ -13,10 +13,7 @@ module.exports = {
         error
         // undefined
 
-        message.reply(`Usd price:${response.result}`);
-
-    response.ok
-    // => true
+        message.reply(`Usd price:${response}`);
 
 })
     }
