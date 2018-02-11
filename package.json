@@ -2,6 +2,7 @@
     "name":"Discord burst bot",
     "main":"bot.js",
     "dependencies":{
-        "discord.js":"latest"
+        "discord.js":"latest",
+        "get-json":"latest"
     }
 }
