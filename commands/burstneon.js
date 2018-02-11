@@ -8,7 +8,7 @@ module.exports = {
         message.reply(`BURSTNEON MINER CONFIGURATION SETTINGS:
 Server: burstneon.com
 Port: 8080
-?Minimum? Deadline: 63072000 (This is 2 years)
+Reccomended Deadline Limit: 63072000 (This is 2 years)
 If using qbundle wallet, go to: __T__ools -> Miner
 If using the command line in 'miner-burst' folder: edit miner.conf
 Need more? See:  https://www.sansun.no/burstneon.php`);
