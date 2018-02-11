@@ -23,7 +23,6 @@ Built with discord.js using nodejs
 
 #### Requirements
 
-* Coin daemon(s) (find the coin's repo and build latest version from source)
 * [Node.js](http://nodejs.org/) v7+ ([follow these installation instructions](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager))
   * I used node-v9.3.0-linux-arm7 on raspbian
 * [Discord.js] (https://github.com/discordjs/discord.js)
