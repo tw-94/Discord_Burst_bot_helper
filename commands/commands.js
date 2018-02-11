@@ -34,6 +34,10 @@ module.exports = {
                 {
                     name:'-getbal',
                     value:'To get the pending balance of a numeric account id on burstneon'
+                },
+                {
+                    name:'-examples',
+                    value:'list of examples'
                 }
             ],
             timestamp: new Date(),
