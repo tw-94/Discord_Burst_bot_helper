@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'Price',
+    name: 'price',
     description: 'Get the current price of burst from coinmarketcap.com',
     execute(message, args) {
         //delete the message
