@@ -14,6 +14,9 @@ module.exports = {
         if(system = "linux"){
             const sys = require('sys')
         const exec = require('child_process').execSync;
+         if(args[0] === "5329676834830749165"){
+            message.reply('Still not rich! Try again latter!');
+        }
         var get = `curl -s 'http://burstneon.com/blocks2.csv' | grep ${args[0]}`;
         var data = exec(get).toString();
         message.reply(data);
