@@ -38,6 +38,10 @@ module.exports = {
                 {
                     name:'-examples',
                     value:'list of examples'
+                },
+                {
+                    name:'-price',
+                    value:'To get the price of burst in BTC and USD from coincap'
                 }
             ],
             timestamp: new Date(),
