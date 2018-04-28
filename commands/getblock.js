@@ -99,5 +99,4 @@ module.exports = {
           //Catch Data every 30 sec
         }, 30000);
       },
-
 };
