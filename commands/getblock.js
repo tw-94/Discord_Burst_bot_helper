@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'getblock',
+    name: 'getblocks',
     description: '',
     execute(message, args) {
         //delete the message
@@ -17,6 +17,8 @@ module.exports = {
         var found = false;
         //Variable RS Format
         var reedSolomon = "";
+        //Variable BlockSize in Kb
+        var size = "";
         //Module for Json Wrapper
         var getJSON = require('get-json');
         //Module converting numeeric to Reed-Solomon Format
@@ -31,6 +33,7 @@ module.exports = {
               if(response.data.blocks[i].reward_recipient_id == 8801781361909135356 && response.data.blocks[i].height > lastheight ) {
                 found = true;
                 lastheight = response.data.blocks[i].height;
+                var size = (response.data.blocks[i].size / 1000).toFixed(2);
                 reedSolomon = nxtjs.rsConvert(response.data.blocks[i].generator_id);
                 if (response.data.blocks[i].generator_name != undefined){
                   accountName = response.data.blocks[i].generator_name;
@@ -71,12 +74,12 @@ module.exports = {
                         value: diff.toString()
                     },
                     {
-                        name: 'Transactions',
+                        name: 'Number Of Transactions',
                         value: response.data.blocks[i].transactions.toString()
                     },
                     {
                         name: 'Block Size',
-                        value: response.data.blocks[i].size.toString()
+                        value: size.toString() + " KB"
                     },
                     {
                         name:'Created on',
@@ -96,7 +99,13 @@ module.exports = {
           }
         }
           })
+          /*
+          if(!found) {
+                    message.reply("No entries last 99 blocks");
+          }
+          found = false; */
           //Catch Data every 30 sec
         }, 30000);
       },
+
 };
