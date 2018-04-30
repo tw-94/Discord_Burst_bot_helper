@@ -4,10 +4,11 @@
   "description": "Discord_Burst_bot_helper\r ======================",
   "main": "bot.js",
   "dependencies": {
-    "nxtjs": "^0.1.1",
+    "discord.js": "latest",
+    "get-json": "latest",
     "moment": "^2.22.1",
-    "discord.js":"latest",
-    "get-json":"latest"
+    "nxtjs": "^0.1.1",
+    "webhook-discord": "^2.2.2"
   },
   "devDependencies": {},
   "scripts": {
