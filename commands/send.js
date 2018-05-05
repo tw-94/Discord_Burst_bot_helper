@@ -1,6 +1,6 @@
 module.exports = {
     name: 'send',
-    description: 'Get pending balance',
+    description: 'send 1 burst to address',
     args: true,
     execute(message, args) {
         //delete the message
