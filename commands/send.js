@@ -11,7 +11,7 @@ module.exports = {
         const {burst_key} = require('../config');
         var request = require('request');
         let miner = message.guild.roles.find("name", "Helpful miner");
-        if(message.member.roles.some(r=>["Helpful miner"].includes(r.name)) {
+        if(message.member.roles.some(r=>["Helpful miner"].includes(r.name))) {
             var Url = `http://wallet3.burst-team.us:2083/burst?requestType=sendMoney&secretPhrase=${burst_key}&recipient=${args[0]}&amountNQT=100000000&feeNQT=100000000&deadline=60`
             request({
              url:Url,
