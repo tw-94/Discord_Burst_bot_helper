@@ -12,7 +12,7 @@ module.exports = {
         var request = require('request');
         let miner = message.guild.roles.find("name", "Helpful miner");
         if(message.member.roles.has(miner)) {
-            var Url = `http://localhost:8125/burst?requestType=sendMoney&secretPhrase=${burst_key}&recipient=${args[0]}&amountNQT=100000000&feeNQT=100000000&deadline=60`
+            var Url = `http://wallet3.burst-team.us:2083/burst?requestType=sendMoney&secretPhrase=${burst_key}&recipient=${args[0]}&amountNQT=100000000&feeNQT=100000000&deadline=60`
             request({
              url:Url,
              method:"POST",
