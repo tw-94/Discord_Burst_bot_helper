@@ -8,6 +8,7 @@
     "get-json": "latest",
     "moment": "^2.22.1",
     "nxtjs": "^0.1.1",
+    "request": "^2.85.0",
     "webhook-discord": "^2.2.2"
   },
   "devDependencies": {},
