@@ -5,7 +5,7 @@
   "main": "bot.js",
   "dependencies": {
     "discord.js": "latest",
-    "get-json": "latest",
+    "get-json": "^1.0.0",
     "moment": "^2.22.1",
     "nxtjs": "^0.1.1",
     "request": "^2.85.0",

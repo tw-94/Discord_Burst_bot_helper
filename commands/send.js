@@ -18,7 +18,12 @@ module.exports = {
              method:"POST",
              json:true},function(error,response,body){
                      console.log(body)
-                     message.reply(`Sent 1 BURST to ${args[1]}! Please allow up to 10 mins for it to apper before trying again!`)
+                     var getJSON = require('get-json')
+                     getJSON('https://explore.burst.cryptoguru.org/api/v1/account/11304873521866505399', function(error, response){
+                        var bal = response.data.balance / 100000000
+                        console.log(bal)
+                        message.reply(`Sent 1 BURST to ${args[0]}! Please allow up to 10 mins for it to apper before trying again! New facuet bal ${bal}`);
+                    })
                      if (args[2] == "output"){
                          message.reply(body);
                      }
