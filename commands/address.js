@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'adress',
+    name: 'address',
     description: 'List of address',
     execute(message, args) {
         message.delete()
@@ -7,8 +7,8 @@ module.exports = {
         .catch(console.error);
         message.channel.send({embed: {
             color: 3447003,
-            title: 'Help',
-            description: 'So you want help hu?',
+            title: 'address',
+            description: 'List of useful address',
             fields: [
                 {
                     name: 'Bot facuet',
