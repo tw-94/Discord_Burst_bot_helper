@@ -55,11 +55,13 @@ client.on('message', message => {
 		command.execute(message, args);
 		//Log command
 		console.log(command);
+		//send command to webhook for real time logging
+		Hook.info(client.user.username, `${message.author.username} executed ${message.cleanContent} in ${message.guild.name}`);
 	}
 	catch (error) {
 		console.error(error);
 		message.reply('There was an error trying to execute that command! Please report this to the bot creater!');
-//		Hook.error(client.user.username, error);
+		Hook.error(client.user.username, error);
 	}
 });
 
