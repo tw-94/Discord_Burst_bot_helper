@@ -55,6 +55,8 @@ client.on('message', message => {
 		command.execute(message, args);
 		//Log command
 		console.log(command);
+		//send command to webhook for real time logging
+		Hook.info(client.user.username, `${message.author.username} executed ${message.cleanContent} in ${message.guild.channel}`);
 	}
 	catch (error) {
 		console.error(error);
