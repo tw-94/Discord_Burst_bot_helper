@@ -7,13 +7,8 @@ module.exports = {
         .catch(console.error);
         message.channel.send({embed: {
             color: 3447003,
-<<<<<<< HEAD:commands/address.js
-            title: 'Help',
-            description: 'common address',
-=======
             title: 'address',
             description: 'List of useful address',
->>>>>>> d6d849cf42056b5864dc9b3ca8747d5f78044220:commands/address.js
             fields: [
                 {
                     name: 'Bot facuet',
