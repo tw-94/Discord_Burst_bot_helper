@@ -67,11 +67,11 @@ client.on('message', message => {
 
 //Log errors to the webhook
 client.on("error",(e) => {
-	Hook.error(client.user.username, e);
+//	Hook.error(client.user.username, e);
 	});
 	 
 	client.on("warn",(w) => {
-		Hook.warn(client.user.username,"Warning: `"+w+"`");
+//		Hook.warn(client.user.username,"Warning: `"+w+"`");
 	});
 
 //bot login
