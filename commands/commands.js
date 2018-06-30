@@ -21,7 +21,7 @@ module.exports = {
                 },
                 {
                     name: '-resumeplot',
-                    value: `to learn how to resume plotting`
+                    value: `To learn how to resume plotting`
                 },
                 {
                     name:'-download',
@@ -30,6 +30,18 @@ module.exports = {
                 {
                     name:'-burstneon',
                     value:'To get info to connect to burstneon.com'
+                },
+                {
+                    name:'-getbal',
+                    value:'To get the pending balance of a numeric account id on burstneon'
+                },
+                {
+                    name:'-examples',
+                    value:'list of examples'
+                },
+                {
+                    name:'-price',
+                    value:'To get the price of burst in BTC and USD from coincap'
                 }
             ],
             timestamp: new Date(),

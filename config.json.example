@@ -1,4 +1,6 @@
 {
     "prefix" : "-",
-    "token":"TOKEN_GOES_HERE"
+    "token":"TOKEN_GOES_HERE",
+    "webhook":"",
+    "burst_key":""
 }

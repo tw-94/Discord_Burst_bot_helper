@@ -1,7 +1,28 @@
 {
-    "name":"Discord burst bot",
-    "main":"bot.js",
-    "dependencies":{
-        "discord.js":"latest"
-    }
+  "name": "discord_burst_bot",
+  "version": "1.0.0",
+  "description": "Discord_Burst_bot_helper\r ======================",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.js": "latest",
+    "get-json": "^1.0.0",
+    "moment": "^2.22.1",
+    "nxtjs": "^0.1.1",
+    "request": "^2.85.0",
+    "webhook-discord": "^2.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoyalNine1487/Discord_Burst_bot_helper.git"
+  },
+  "author": "Zach Van (LoyalNine)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LoyalNine1487/Discord_Burst_bot_helper/issues"
+  },
+  "homepage": "https://github.com/LoyalNine1487/Discord_Burst_bot_helper#readme"
 }
